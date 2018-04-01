@@ -1,0 +1,13 @@
+[Telegram]
+; Put bot API key here (DO NOT PUT A SPACE AFTER THE COLON IN THE INI FILE)
+APIKey:12345:abcde
+
+[Markov]
+; Name of chain to start sn0wbit with
+ChainName:markov
+; A number between 0 to 1 that reflects the percentage of responses allowed to overlap with training text
+OriginalOverlap:0.45
+
+[Administration]
+; Telegram user ID that can access the admin commands
+SuperUserID:1234567890
