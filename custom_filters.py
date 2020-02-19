@@ -2,7 +2,7 @@ from telegram.ext import BaseFilter
 
 class InGroupFilter(BaseFilter):
     def filter(self, message):
-        return message.chat.type == 'group'
+        return message.chat.type == 'group' or message.chat.type == 'supergroup'
 
 class RedditFilter(BaseFilter):
     def filter(self, message):
