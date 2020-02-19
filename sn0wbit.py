@@ -85,7 +85,6 @@ def t_markov(bot, update):
             text = f.read()
 
         text_model = markovify.NewlineText.from_chain(text)
-        print("I'm here")
         s_starting_word = markov_tools.get_random_starting_word(text_model)
         #bot.sendMessage(chat_id=update.message.chat_id, text="DEGUB: " + s_starting_word)
         s_sentence = text_model.make_short_sentence(240, max_overlap_ratio=CFG_ORIGINAL_OVERLAP)
