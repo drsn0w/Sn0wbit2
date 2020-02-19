@@ -1,2 +1,4 @@
 __pycache__/
 sn0wbit.ini
+*.train
+*.mchain
