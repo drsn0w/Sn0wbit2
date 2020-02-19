@@ -10,7 +10,7 @@ class MentionFilter(BaseFilter):
 
 class UserAddedFilter(BaseFilter):
     def filter(self, message):
-        return message.new_chat_member is not None
+        return message.new_chat_members is not None
 
 class UserLeftFilter(BaseFilter):
     def filter(self, message):

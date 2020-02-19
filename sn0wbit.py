@@ -98,8 +98,10 @@ def t_markov(bot, update):
 
 # Greets a user
 def a_useradd(bot, update):
-    fname = update.message.new_chat_member.first_name
-    bot.sendMessage(chat_id=update.message.chat_id, text="Welcome, " + fname + "!")
+    for newuser in update.message.new_chat_members:
+        fname = newuser.first_name
+        bot.sendMessage(chat_id=update.message.chat_id, text="Welcome, " + fname + "!")
+
 
 # Says goodbye to a user
 def a_userleft(bot, update):
